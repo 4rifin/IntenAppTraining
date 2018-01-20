@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.intenapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--memanggil Link url yang akan di buat-->
+            <TextView
+                android:id="@+id/textBrowser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masukan Link" />
+
+            <EditText
+                android:id="@+id/editBrowser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textBrowser"
+                android:drawableLeft="@drawable/ic_open_in_browser_black_24dp"
+                android:hint="  www.google.com" />
+
+            <Button
+                android:id="@+id/buttonBrowser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editBrowser"
+                android:onClick="openLink"
+                android:text="Go to Link" />
+
+            <!--Mengirim Share Text-->
+            <TextView
+                android:id="@+id/textShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonBrowser"
+                android:text="Share Text" />
+
+            <EditText
+                android:id="@+id/editShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textShare"
+                android:drawableLeft="@drawable/ic_share_black_24dp"
+                android:hint="  Input Your Text" />
+
+            <Button
+                android:id="@+id/buttonShared"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editShare"
+                android:onClick="openTextShare"
+                android:text="Go To Share" />
+
+            <!--Mengirim Telephon-->
+            <TextView
+                android:id="@+id/textPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonShared"
+                android:text="Masukan Nomor Telepon" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPhone"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:hint="  Input Your Number Phone"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/buttonPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPhone"
+                android:onClick="openTelp"
+                android:text="Go To Phone" />
+
+            <TextView
+                android:id="@+id/textSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonPhone"
+                android:text="SMS Text" />
+
+            <EditText
+                android:id="@+id/editSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSms"
+                android:drawableLeft="@drawable/ic_sms_black_24dp"
+                android:hint="  Input Your Text" />
+
+            <Button
+                android:id="@+id/buttonSms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editSms"
+                android:onClick="openSms"
+                android:text="Go to SMS" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scroll Kebawah"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Scroll Kebawah"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scroll Kebawah"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Scroll Kebawah"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrolKebawah"
+                android:text="Scroll Kebawah"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Scroll Kebawah"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
